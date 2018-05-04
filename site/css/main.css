@@ -1,13 +1,15 @@
 body{
     margin: 0px;
+    overflow: hidden;
 }
 .wrapper{
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 25vw);
     grid-template-rows: repeat(10, 10vh);
     background-color: #EEEE;
+    overflow: hidden;
 }
 
 header{
@@ -32,6 +34,20 @@ header{
     margin: auto;
     font-size: 45px;
     color: #EEEE;
+}
+
+#index_mobile_img{
+    grid-column: 1/5;
+    grid-row: 2/5;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+#intro_text{
+    grid-column: span 3;
+    grid-row: 6/9;
 }
 
 @media only screen and (min-device-width: 400px){
