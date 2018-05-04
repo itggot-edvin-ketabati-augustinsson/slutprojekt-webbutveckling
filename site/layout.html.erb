@@ -3,46 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Rehabcenter</title>
+    <title>Hajk Info</title>
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <div class="profile_button">
-                <i class="material-icons" onclick="toggleProfileMenu()">perm_identity</i>
-            </div>
-            <h1>Rehab</h1>
-            <div class="menu_button">
-                <i class="material-icons" onclick="toggleMenuMenu()">menu</i>
-            </div>
+            <h1 id="Title">Hajk Info</h1>
+            <i class="material-icons" id="Menu_button">menu</i>
         </header>
         <main>
-            <div class="profile_menu">
-                <ul>
-                    <li>Lorem</li>
-                    <li>Ipsum</li>
-                    <li>Dolor</li>
-                    <li>Sit</li>
-                    <li>Amet</li>
-                </ul>
-            </div>
-            <div class="menu_menu">
-                <ul>
-                    <li>Lorem</li>
-                    <li>Ipsum</li>
-                    <li>Dolor</li>
-                    <li>Sit</li>
-                    <li>Amet</li>
-                </ul>
-            </div>
             <%= yield %>
         </main>
-        <footer>
-            <p>Lorem ipsum dolor sit, amet consectetur</p>
-        </footer>
     </div>
     <script src="js/toggle_menu.js"></script>
     <script src="js/modal.js"></script>
