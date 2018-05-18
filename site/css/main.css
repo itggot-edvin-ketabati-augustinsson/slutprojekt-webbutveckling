@@ -34,13 +34,17 @@ main {
     grid-template-columns: repeat(4, 25vw);
     grid-template-rows: repeat(9, 10vh);
 }
-#Title{
+
+.title{
+    text-decoration: none;
     color: #EEEE;
     font-family: 'Roboto Condensed', sans-serif;
     position: relative;
     grid-column: 2/4;
     margin: auto;
     margin-top: 2vh;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 #Menu_button{
@@ -52,17 +56,20 @@ main {
 
 .menu_div{
     position: relative;
-    grid-column: 3/5;
-    grid-row: 1/6;
+    grid-column: 1/5;
+    grid-row: 1/4;
     z-index: 1000;
     background-color: #01395A;
     color: #EEEE;
     font-family: 'Roboto Condensed', sans-serif;
     border-top: 2px solid black;
     z-index: 999;
-    transform: translateX(100%);
+    transform: translateY(-100%);
     opacity: 0;
     transition: 0.5s;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
 }
 
 .menu_div a{
@@ -71,13 +78,19 @@ main {
     font-size: 20px;
 }
 
-.menu_div li{
-    margin: 15px;
+.menu_div ul {
+    grid-column: 2/4;
+    grid-row: 1/7;
+}
+
+.menu_div li {
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 .show_menu_div{
     opacity: 0.95;
-    transform: translateX(0);
+    transform: translateY(0);
 }
 
 .show_menu_div a {
@@ -123,6 +136,26 @@ main {
 
 #intro_list li{
     margin: 7px;
+}
+
+.login_intro{
+    grid-column: 1/5;
+    grid-row: 1/4;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+.login_intro p {
+    margin: 16px;
+}
+
+.login_fields{
+    grid-column: 1/5;
+    grid-row: 3/7;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
 }
 
 @media only screen and (min-device-width: 400px){
