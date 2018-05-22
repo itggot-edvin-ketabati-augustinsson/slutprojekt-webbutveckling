@@ -55,7 +55,8 @@ main {
 }
 
 .menu_div{
-    position: relative;
+    position: fixed;
+    width: 100vw;
     grid-column: 1/5;
     grid-row: 1/4;
     z-index: 1000;
@@ -67,7 +68,7 @@ main {
     transform: translateY(-100%);
     opacity: 0;
     transition: 0.5s;
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(6,1fr);
 }
@@ -151,11 +152,52 @@ main {
 
 .login_fields{
     grid-column: 1/5;
-    grid-row: 3/7;
+    grid-row: 3/6;
     font-family: 'Roboto Condensed', sans-serif;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(3,1fr);
+}
+
+.login_fields *{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.login_fields h3{
+    margin-left: 8px;
+}
+
+input{
+    width: 50vw;
+    height: 6vh;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    text-indent: 6px;
+}
+
+.username{
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.password{
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+
+.login_button{
+    grid-column: 3/5;
+    grid-row: 7/8;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #EEEE;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: #01395A;
 }
 
 @media only screen and (min-device-width: 400px){
