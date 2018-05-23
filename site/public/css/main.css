@@ -35,6 +35,11 @@ main {
     grid-template-rows: repeat(9, 10vh);
 }
 
+.welcomeh2{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 .title{
     text-decoration: none;
     color: #EEEE;
@@ -221,6 +226,7 @@ input{
     font-size: 22px;
     opacity: 0;
     box-shadow: 8px 8px 8px #808080;
+    transition: 0.5s;
 }
 
 .modal h3{
@@ -236,6 +242,19 @@ input{
 .show_modal{
     opacity: 1;
     transition: 0.5s;
+}
+
+.vinter_intro{
+    grid-column: 1/5;
+    grid-row: 1/4;
+}
+
+.sprites{
+    grid-row: 2/11;
+    grid-column: 1/5;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 0px 10px 0px 10px;
 }
 
 @media only screen and (min-device-width: 400px){
