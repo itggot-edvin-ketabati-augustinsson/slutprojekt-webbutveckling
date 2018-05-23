@@ -1,4 +1,4 @@
-function execute(){
+function executeModal(){
     modalBox()
     var timeDelay = 3000
     setTimeout(modalBox , timeDelay)
@@ -6,6 +6,6 @@ function execute(){
 }
 
 function modalBox(){
-    var element = document.querySelector(".bokat");
-    element.classList.toggle("show_bokat");
+    var element = document.querySelector(".modal");
+    element.classList.toggle("show_modal");
 }
