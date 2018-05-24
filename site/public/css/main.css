@@ -263,7 +263,7 @@ input{
     grid-row: 1/2;
 }
 
-.sprite1{
+.sprite1, .sprite2, .sprite3, .sprite4{
 	background: url("./img/sprites.png") no-repeat;
 }
 
