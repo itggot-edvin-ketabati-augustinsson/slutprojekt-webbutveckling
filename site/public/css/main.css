@@ -271,6 +271,30 @@ input{
 
 /* Start sommar-page */
 
+.sommar_intro{
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+
+.packlista{
+    grid-column: 1/5;
+    grid-row: 2/5;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.packlista h2{
+    font-size: 20px;
+}
+
+.packlista li {
+    text-align: left;
+    margin-bottom: 10px;
+}
 
 @media only screen and (min-device-width: 400px){
     
