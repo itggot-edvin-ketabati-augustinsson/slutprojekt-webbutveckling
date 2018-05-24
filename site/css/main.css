@@ -296,6 +296,18 @@ input{
     margin-bottom: 10px;
 }
 
+.sommar_mobile_img{
+    grid-column: 1/5;
+    grid-row: 6/11;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: 0px 10px 10px #808080;
+}
+
+.sommar_img{
+    display:none;
+}
+
 @media only screen and (min-device-width: 400px){
-    
+
 }
