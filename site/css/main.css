@@ -118,6 +118,10 @@ main {
     box-shadow: 0px 10px 10px #808080;
 }
 
+.index_desktop_img_div{
+    display:none;
+}
+
 #intro_text_box{
     grid-column: 1/5;
     grid-row: 5/11;
@@ -264,37 +268,35 @@ input{
 }
 
 .sprite1, .sprite2, .sprite3, .sprite4{
-	background: url("./img/sprites.png") no-repeat;
+	background: url("../img/sprites.png") no-repeat;
 }
 
 .sprite1{
-    grid-row: 2/4;
+    grid-row: 2/5;
 	background-position: 0 0;
 	width: 300px;
-	height: 225px;
+    height: auto;
+    overflow: hidden;
+    margin: 10px;
 }
 
 .sprite2{
-    grid-row: 4/6;
+    grid-row: 5/8;
 	background-position: -340px 0;
 	width: 300px;
-	height: 225px;
+    height: auto;
+    overflow: hidden;
+    margin: 10px;
 }
 
 .sprite3{
-    grid-row: 6/8;
+    grid-row: 8/11;
 	background-position: 0 -255px ;
 	width: 300px;
-	height: 225px;
+    height: auto;
+    overflow: hidden;
+    margin: 10px;
 }
-
-.sprite4{
-    grid-row: 8/10;
-	background-position: -340px -255px ;
-	width: 300px;
-	height: 225px;
-}
-
 
 /* Stop vinter-page */
 
@@ -418,5 +420,33 @@ input{
         max-width: 100%;
         height: auto;
         transform: translateY(-12%);
+    }
+
+    .login_button{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .modal h3{
+        margin-top: 10%;
+        margin-bottom: 0%;
+    }
+    
+    .modal i{
+        margin-top: 0%;
+        font-size: 60px;
+    }
+
+    .index_desktop_img_div{
+        display: block;
+        grid-row: 5/11;
+        grid-column: 2/4;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+
+    #index_desktop_img{
+        max-width: 100%;
+        height: auto;
     }
 }
